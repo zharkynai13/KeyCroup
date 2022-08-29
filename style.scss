@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.container{
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+a {
+  text-decoration: none;
+}
+
+.header {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+
+
+    .nav {
+      .menu {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &__item {
+          list-style: none;
+          padding-right: 40px;
+
+          &__link {
+            color: #000000;
+            font-family: "inter" , sans-serif;
+            font-size: 16px;
+            font-weight: 400px;
+
+            img {
+              position: absolute;
+              top: 14px;
+              left: 515px;
+
+            }
+
+            &__btn {
+              color: #fff;
+              border: 1px solid none;
+              background: #753EEC;
+              padding: 12px 24px;
+              border-radius: 60px;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+  
+  &__bottom-nav {
+    margin: 0 0 23px 0;
+  }
+   .bottom-nav {
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item {
+      list-style: none;
+      font-size: 16px;
+    }
+   }
+  }
+
+.bottom-nav__item::after {
+    content: ">";
+}
+
+
+.main-block {
+  margin: 120px 0;
+
+  &__wrapper {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .main__title {
+    font-weight: 700px;
+    font-size: 40px;
+  }
+  .main-text {
+    font-size: 24px;
+    font-weight: 500px;
+    margin: 20px 0 0 0;
+    line-height: 32px;
+    font-weight: 500;
+  }
+
+  &__btn {
+    margin: 20px 0 0 0;
+  }
+}
+
+.btn {
+  color: #fff;
+  border: 1px solid none;
+  background: #753EEC;
+  padding: 18px 40px;
+  border-radius: 60px;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.btn-wh {
+  color: #753EEC;
+  border: 1px solid #753EEC;
+  background: #fff;
+  padding: 18px 40px;
+  border-radius: 60px;
+  font-size: 16px;
+  line-height: 16px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+button {
+  border: none;
+}
+
+.about {
+
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__first-blc {
+    padding: 40px 40px 30px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+
+    &__title {
+      padding: 0  0 30px 0;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  .blc-text {
+    padding: 0 0 20px 0;
+    font-size: 16px;
+    p {
+      padding-bottom: 5px;
+    }
+  }
+
+  &__second-blc {
+    padding: 40px 40px 30px 40px;
+    background: #753EEC;
+    color: #fff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+
+    &__title {
+      padding: 0  0 30px 0;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}
+
+.services {
+  margin: 120px 0;
+
+&__title {
+  margin-bottom: 40px;
+  font-size: 36px;
+line-height: 42px;
+
+}
+  &__wrapper {
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      
+
+
+      .card {
+        padding: 30px;
+        background: #FFFFFF;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+
+        &__list {
+          margin-top: 30px;
+          
+
+          &__item {
+            list-style: none;
+            padding: 0 0 20px 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            justify-content: space-between;
+            
+          }
+        }
+
+        &__btn {
+          color: #753EEC;
+          border: 1px solid #753EEC;
+          background: #fff;
+          padding: 10px 120px;
+          border-radius: 60px;
+          font-size: 16px;
+          line-height: 16px;
+          cursor: pointer;
+         
+        }
+
+        &__title {
+          padding: 0 0 20px 0;
+        }
+
+        .money {
+          color: #753EEC;
+          
+        }
+      }
+    }
+  }
+}
+
+.request {
+  margin-bottom: 120px;
+  &__inner {
+    display: flex;
+    gap: 20px;
+    
+  }
+
+  &__card {
+    padding: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+  }
+
+  .for-startaps {
+
+    &__title {
+      padding: 5px 0 30px 0;
+    }
+
+    &__btn {
+      margin-top: 40px;
+    }
+    &__list {
+      padding-left: 20px;
+      
+      &__item {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  .for-company {
+    &__title {
+      padding: 5px 0 30px 0;
+    }
+    &__btn {
+      margin-top: 40px;
+    }
+    &__list {
+      padding-left: 20px;
+      
+      &__item {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+.user-call {
+   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+   border-radius: 12px;
+   margin: 0 0 120px 0;
+   padding: 100px 80px;
+   display: flex;
+   justify-content: space-between;
+   gap: 80px;
+
+   &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    padding: 0 0 10px 0;
+   }
+
+   &__text {
+    padding: 0 0 70px 0;
+    font-size: 16px;
+    line-height: 22px;
+   }
+}
+
+.contact {
+  text-align: center;
+}
+
+.footer {
+  margin: 120px 0 0 0;
+  background-color: #0B0D17;
+  ;
+  color: #fff;
+  &__wrapper {
+    padding: 60px 0 40px 0;
+    display: flex;
+    justify-content:space-between ;
+  }
+ &__services {
+
+  &__menu {
+    list-style: none;
+  }
+ }
+ .footer-titles {
+  padding: 0 0 30px 0;
+ }
+
+ a {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+ }
+ li {
+  list-style: none;
+  padding: 0 0 10px 0;
+ }
+
+ &__contact {
+  span {
+    padding-left: 20px;
+    
+  }
+  p {
+    padding: 0 0 30px 0;
+  }
+ }
+
+ .confidentiali {
+  border-top: 1px solid #ffffff;
+  padding: 40px 0;
+ }
+}
